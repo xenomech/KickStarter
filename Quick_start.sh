@@ -1,4 +1,6 @@
 #!/bin/sh
+apt-get update
+apt-get install dialog
 welcomemsg() { \
 	dialog --title "Welcome!" --msgbox "This script will set you up with any project you need ;)" 10 60
 	}
@@ -14,12 +16,12 @@ getprojectframework(){\
 	case $FRAMEWORK in
 		f)
 			echo "initializing flutter app"
-        	flutter create $1
+        	flutter create $name
         	break
 			;;
 		r)
 			echo "initializing react app"
-        	npx create-react-app $1
+        	npx create-react-app $name
 			break
 			;;
 		*)
@@ -32,7 +34,7 @@ getprojectframework(){\
 	mkdir "backbone"
 	cd ..
 }
-gitcommit(){/
+gitcommit(){
 	git init
 	echo "# $name">> README.md
 	echo "Initial commits on the project $name" >> README.md
@@ -43,7 +45,3 @@ welcomemsg
 getprojectname
 getprojectframework
 gitcommit
-
-
-
-
