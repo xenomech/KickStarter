@@ -15,17 +15,17 @@ getprojectframework(){\
 	cd "Frontend"
 	case $FRAMEWORK in
 		f)
-			echo "initializing flutter app"
+			echo "init flutter app"
         	flutter create $name
         	break
 			;;
 		r)
-			echo "initializing react app"
+			echo "init react app"
         	npx create-react-app $name
 			break
 			;;
 		*)
-			echo "Sorry, I don't understand"
+			echo "Sorry, I didn't get that"
 			;;
 	esac
 	cd ..
