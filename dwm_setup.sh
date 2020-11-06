@@ -8,9 +8,8 @@ echo "exec dwm" >> .xinitrc
 mkdir suckless_programs
 cd suckless_programs
 
-wget https://dl.suckless.org/dwm/dwm-6.2.tar.gz
-tar -xzvf dwm-6.2.tar.gz
-cd dwm-6.2
+git clone https://github.com/xenomech/dwm.git
+cd dwm
 sudo make clean install
 
 cd ..
