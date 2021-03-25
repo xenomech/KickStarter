@@ -5,12 +5,18 @@ cp /etc/X11/xinit/xinitrc .xinitrc
 echo "picom -f &" >> .xinitrc
 echo "exec dwm" >> .xinitrc
 
-mkdir suckless_programs
-cd suckless_programs
+mkdir Dev_apps
+cd Dev_apps
 
 git clone https://github.com/xenomech/dwm.git
 cd dwm
-sudo make clean install
+sudo ./install.sh
+
+cd ..
+
+git clone https://github.com/xenomech/dmenu.git
+cd dmenu
+sudo ./install.sh
 
 cd ..
 
