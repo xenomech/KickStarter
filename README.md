@@ -1,6 +1,6 @@
-# The kick starter script 😂️
+# The kick starter script 
 
-> chmod +X Quick_start.sh
+As installing and setting up a new system can be time-consuming, this shell script will help you automate the installation process
 
 > ./Quick_start.sh
 

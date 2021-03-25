@@ -1,6 +1,5 @@
 #!/bin/sh
-apt-get update
-apt-get install dialog
+sudo ./dependencies.sh
 welcomemsg() { \
 	dialog --title "Welcome!" --msgbox "This script will set you up with any project you need ;)" 10 60
 	}
